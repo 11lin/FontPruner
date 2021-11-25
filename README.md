@@ -1,7 +1,17 @@
-# FontPruner
- 
-Check out article below for details:
+# 西山居字体精简工具
+## 优势
+- 只会保留指定文本的字，不会存在多余文字，精简:字体11M -> ~=1.8M
+- 某些工具，精简：字体11M -> ~=3M
 
-- http://gulu-dev.com/post/2017/2017-09-15-font-pruner-intro/content
+## 环境工具
+- 需要Python Java环境
+- FontCreator转换ttf格式
+## 使用方式
 
-![font_pruner](http://gulu-dev.com/2017/2017-09-15-font-pruner-intro/1-method.png)
+- 汉字：src/FontExtract/ChineseOutPut.txt
+- 特殊字符:src/FontExtract/unChineseOutPut.txt
+  
+```bash
+# 精简过后的字体会输出在output目录
+py FontPruner.py --inputPath=./ --inputFont=SourceHanSerifCN-Heavy.ttf --tempPath=./
+```
