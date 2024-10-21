@@ -15,7 +15,7 @@ Succ = 0
 def genFilePathList(inputPath,FileListOP):    
   fullPara = ""
   for path in inputPath:
-    print "path = " +path
+    print("path = "+path)
     fullPara +=path+" "
   fullPara += " "+FileListOP + SepPath+InputFilelist    
   command ="java -jar bin"+SepPath+"GenFileList.jar " +fullPara
